@@ -26,8 +26,6 @@ ccw = [[0, 0, 0, 1],
       [1, 0, 0, 0],
       [1, 0, 0, 1]]
 
-
-
 def stop():
     d1.off()
     d2.off()
@@ -35,10 +33,7 @@ def stop():
     d4.off()
 
 def servo(angle, direction):
-   d1.off()
-   d2.off()
-   d3.off()
-   d4.off()
+   stop()
    count = 1
    rotation = int(angle*512/360)
    t = 0.0015
